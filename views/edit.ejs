@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet"  href="/style.css">
+</head>
+<body>
+    <h2 class="basic">Edit your comment..</h2>
+    <div >
+
+        <img src=<%=post.image%> alt="images" style="height: 150px; width: 150px; border-radius: 50%; object-fit: cover">
+        <h3>username :<%=post.username%></h3>
+        <h3>User Id :<%=post.id%></h3> 
+        <h3>Likes :<%=post.likes%></h3>
+    
+    <form method="POST" action="/posts/<%-post.id%>?_method=PATCH" >
+        <textarea name="comment"><%=post.comment%></textarea>
+        <br>
+        <button>submit</button>
+    </form>
+    </div>
+     
+    
+     
+</body>
+</html>

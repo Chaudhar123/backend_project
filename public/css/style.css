@@ -1,0 +1,87 @@
+
+
+.user-box {
+    width: 600px;
+    background-color: #b3ffd9; /* Light Green */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+    font-family: Arial, sans-serif;
+  }
+
+  /* Photo Styling */
+  .user-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* Content Styling */
+  .user-details {
+    flex: 1; /* Takes remaining space */
+  }
+
+  .user-details .username {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  .user-details .comment, 
+  .user-details .likes {
+    margin: 6px 0;
+  }
+
+  /* Anchor Tag Styling */
+  .user-details a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .user-details a:hover {
+    text-decoration: underline;
+  }
+
+  .button{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #28a745;
+    ;
+  }
+  .basic{
+    background-color: #ccc;
+    border-radius: 2px solid black;
+  }
+
+  .button{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: red;
+    ;
+  }

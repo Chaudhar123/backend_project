@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta-Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="user-box">Instagram Page</h1>
+    <%for(post of posts){%>
+     <div class="user-box">
+     
+      <div class="user-photo">
+        <img src=<%=post.image%> alt="image" style="height: 150px; width: 150px; border-radius: 50%; object-fit: cover;">
+      </div>
+
+      <div class="user-details">
+
+
+        <div class="username">
+            <h3 class="username">Username: <%=post.username%></h3>
+          </div>
+          
+          <div class="comment">
+            <h4>Comments :<%=post.comment%></h4>
+          </div>
+            
+          <div class="likes">
+            <h4>Likes :<%=post.likes%> </h4>
+            <h6>ID :<%=post.id%></h6>
+            <a href="http://localhost:3000/posts/<%=post.id%>">See in detail</a>
+            <br>
+            <a href="http://localhost:3000/posts/<%=post.id%>/edit">Edit comment</a>
+            <br>
+            <br>
+            <form method="POST" action="/posts/<%-post.id%>?_method=DELETE">
+                <button class="button">delete</button>
+
+            </form>
+            
+          </div>
+
+      </div>
+     
+      
+        
+
+     </div>
+    <%}%>
+    <a href="http://localhost:3000/posts/new" class="user-box">Create new post</a>
+    <%-include("includes/footer.ejs")%>
+</body>
+</html>
