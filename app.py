@@ -15,3 +15,4 @@
 arr=[0,1,"arjun",10]
 arr.pop()
 print(arr)
+print(arr)
